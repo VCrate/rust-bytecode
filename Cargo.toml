@@ -1,0 +1,6 @@
+[package]
+name = "rust-bytecode"
+version = "0.1.0"
+authors = ["Hazurl <ricoujules69@gmail.com>"]
+
+[dependencies]
