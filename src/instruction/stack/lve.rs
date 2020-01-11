@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Lve {}
+pub struct Lve {}
 
 impl Instruction for Lve {
     fn get_type_code(&self) -> u8 {

@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Hlt {}
+pub struct Hlt {}
 
 impl Instruction for Hlt {
     fn get_type_code(&self) -> u8 {

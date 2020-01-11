@@ -1,9 +1,9 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Mov<A: Writable, B: Readable> {
-    lhs: A,
-    rhs: B,
+pub struct Mov<A: Writable, B: Readable> {
+    pub lhs: A,
+    pub rhs: B,
 }
 
 impl<A: Writable, B: Readable> Instruction for Mov<A, B> {

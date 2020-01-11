@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Dec<A: Writable + Readable> {
+pub struct Dec<A: Writable + Readable> {
     operand: A,
 }
 

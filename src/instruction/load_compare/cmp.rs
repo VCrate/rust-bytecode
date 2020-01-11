@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Cmp<A: Readable, B: Readable> {
+pub struct Cmp<A: Readable, B: Readable> {
     lhs: A,
     rhs: B,
 }
@@ -38,7 +38,7 @@ impl<A: Readable, B: Readable> Instruction for Cmp<A, B> {
     }
 }
 
-struct Cmpu<A: Readable, B: Readable> {
+pub struct Cmpu<A: Readable, B: Readable> {
     lhs: A,
     rhs: B,
 }

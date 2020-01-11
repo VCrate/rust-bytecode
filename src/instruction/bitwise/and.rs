@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct And<A: Writable, B: Readable> {
+pub struct And<A: Writable, B: Readable> {
     lhs: A,
     rhs: B,
 }

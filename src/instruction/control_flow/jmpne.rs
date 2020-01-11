@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Jmpne<A: Readable> {
+pub struct Jmpne<A: Readable> {
     operand: A,
 }
 

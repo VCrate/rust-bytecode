@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Pop<A: Writable> {
+pub struct Pop<A: Writable> {
     operand: A,
 }
 

@@ -41,11 +41,11 @@ impl Operand for Register {
     }
 
     fn encode_9bits(&self) -> (u9, Option<u32>) {
-        (u9::new(*self as u16), None)
+        (u9::new(*self as u16) << 5, None)
     }
 
     fn encode_21bits(&self) -> (u21, Option<u32>) {
-        (u21::new(*self as u32), None)
+        (u21::new(*self as u32) << 17, None)
     }
 }
 impl Readable for Register {}

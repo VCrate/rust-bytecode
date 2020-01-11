@@ -5,3 +5,4 @@ authors = ["Hazurl <ricoujules69@gmail.com>"]
 
 [dependencies]
 ux = "0.1.2"
+ascii = "0.8"

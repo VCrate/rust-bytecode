@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Lea<A: Writable, B: Addressable> {
+pub struct Lea<A: Writable, B: Addressable> {
     lhs: A,
     rhs: B,
 }

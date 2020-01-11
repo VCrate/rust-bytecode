@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Ret {}
+pub struct Ret {}
 
 impl Instruction for Ret {
     fn get_type_code(&self) -> u8 {

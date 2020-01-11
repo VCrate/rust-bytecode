@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Dbg<A: Readable> {
+pub struct Dbg<A: Readable> {
     operand: A,
 }
 

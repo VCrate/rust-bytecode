@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Swp<A: Writable + Readable, B: Writable + Readable> {
+pub struct Swp<A: Writable + Readable, B: Writable + Readable> {
     lhs: A,
     rhs: B,
 }

@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Div<A: Writable, B: Readable> {
+pub struct Div<A: Writable, B: Readable> {
     lhs: A,
     rhs: B,
 }
@@ -38,7 +38,7 @@ impl<A: Writable, B: Readable> Instruction for Div<A, B> {
     }
 }
 
-struct Divu<A: Writable, B: Readable> {
+pub struct Divu<A: Writable, B: Readable> {
     lhs: A,
     rhs: B,
 }

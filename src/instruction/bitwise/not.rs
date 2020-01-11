@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Not<A: Writable + Readable> {
+pub struct Not<A: Writable + Readable> {
     operand: A,
 }
 

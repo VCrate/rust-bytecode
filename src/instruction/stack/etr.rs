@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Etr {}
+pub struct Etr {}
 
 impl Instruction for Etr {
     fn get_type_code(&self) -> u8 {

@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Mul<A: Writable, B: Readable> {
+pub struct Mul<A: Writable, B: Readable> {
     lhs: A,
     rhs: B,
 }
@@ -38,7 +38,7 @@ impl<A: Writable, B: Readable> Instruction for Mul<A, B> {
     }
 }
 
-struct Mulu<A: Writable, B: Readable> {
+pub struct Mulu<A: Writable, B: Readable> {
     lhs: A,
     rhs: B,
 }

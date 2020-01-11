@@ -27,7 +27,7 @@ impl Operand for Displacement {
     fn encode_9bits(&self) -> (u9, Option<u32>) {
         let encoded = self.0.encode_9bits();
         (
-            (encoded.0 << 5) | u9::new((self.1 & 0x1F) as u16),
+            encoded.0 | u9::new((self.1 & 0x1F) as u16),
             if self.fit_in_9bits() {
                 None
             } else {
@@ -39,7 +39,7 @@ impl Operand for Displacement {
     fn encode_21bits(&self) -> (u21, Option<u32>) {
         let encoded = self.0.encode_21bits();
         (
-            (encoded.0 << 5) | u21::new((self.1 & 0x1FFFF) as u32),
+            encoded.0 | u21::new((self.1 & 0x1FFFF) as u32),
             if self.fit_in_21bits() {
                 None
             } else {

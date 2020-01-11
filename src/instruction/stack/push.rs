@@ -1,7 +1,7 @@
 use instruction::instruction::*;
 use operand::operand::*;
 
-struct Push<A: Readable> {
+pub struct Push<A: Readable> {
     operand: A,
 }
 

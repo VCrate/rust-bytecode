@@ -17,7 +17,7 @@ pub trait Operand {
 pub fn encode_12bits(operand: &Operand) -> (u12, Option<u32>) {
     let encoded = operand.encode_9bits();
     (
-        u12::new(u16::from(operand.get_type_code_9bits() << 9)) | u12::new(u16::from(encoded.0)),
+        u12::new(u16::from(operand.get_type_code_9bits()) << 9) | u12::new(u16::from(encoded.0)),
         encoded.1,
     )
 }
